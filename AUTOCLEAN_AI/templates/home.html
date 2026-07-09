@@ -1,11 +1,91 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>AutoClean AI</title>
-    <head>
-    <body>
-        <h1>Welcome to AutoClean AI</h1>
-        <p>AutoClean AI is a powerful tool that helps you clean and preprocess your data</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoClean AI</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    </body>
+<div class="bg-glow glow-1"></div>
+<div class="bg-glow glow-2"></div>
+
+<nav>
+    <div class="logo">
+        AutoClean <span>AI</span>
+    </div>
+    <ul>
+        <li><a href="" class="nav-link">Home</a></li>
+        <li><a href="" class="nav-link">Features</a></li>
+        <li><a href="" class="nav-link">About</a></li>
+        <li><a href="" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="left animate-fade-in">
+        <h1>
+            Clean Your Data<br>
+            with <span class="gradient-text">AI in Seconds</span>
+        </h1>
+        <p>
+            Upload your CSV file and let AutoClean AI automatically detect missing values,
+            remove duplicates, preprocess your dataset, and generate beautiful visualizations.
+        </p>
+        <div class="buttons">
+            <button class="btn1">Upload Dataset</button>
+            <button class="btn2">Learn More</button>
+        </div>
+    </div>
+
+    <div class="right animate-float">
+        <div class="img-wrapper">
+            <img src="{% static 'images/aiclean.jpg' %}" alt="AI Layout Presentation">
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Features That Power Your Data</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="icon-box">📂</div>
+            <h3>Upload CSV</h3>
+            <p>Simply upload your dataset safely and securely to our cloud.</p>
+        </div>
+        <div class="card">
+            <div class="icon-box">🧹</div>
+            <h3>Auto Cleaning</h3>
+            <p>AI automatically handles missing values, duplicates, and preprocessing.</p>
+        </div>
+        <div class="card">
+            <div class="icon-box">📊</div>
+            <h3>Visualization</h3>
+            <p>Generate interactive, publication-ready charts and graphs instantly.</p>
+        </div>
+        <div class="card">
+            <div class="icon-box">📈</div>
+            <h3>Insights</h3>
+            <p>Understand your dataset patterns and distributions automatically.</p>
+       
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-content">
+        <h2>Ready to Clean Your Data?</h2>
+        <p>Join thousands of data analysts automating their workflow.</p>
+        <button class="cta-btn">Get Started Now</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AutoClean AI. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
